@@ -1,18 +1,19 @@
 import blog, { ga, redirects } from "https://deno.land/x/blog@0.3.3/blog.tsx";
 
 blog({
-  title: "Alexlees",
+  title: "alexlees",
   author: "alexlees",
-  avatarClass: "full",
+  description: "alexlees's blog",
+  avatarClass: "rounded-full",
+  avatar: 'https://avatars.githubusercontent.com/u/38124537',
   links: [
     { title: "GitHub", url: "https://github.com/alexlees" },
   ],
   background: "#f9f9f9",
+  lang: 'zh-cn',
+  timezone: "zh-cn",
   middlewares: [
-    ga("UA-91675022-1"),
-    redirects({
-      "iocp-links.html": "iocp_links",
-      "rant.html": "rant",
-    }),
+    ga("G-9RKQCCX1SR"),
+    redirects({}),
   ],
 });
