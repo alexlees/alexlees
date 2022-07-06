@@ -5,12 +5,12 @@ blog({
   author: "alexlees",
   description: "alexlees's blog",
   avatarClass: "rounded-full",
-  avatar: 'https://avatars.githubusercontent.com/u/38124537',
+  avatar: "https://avatars.githubusercontent.com/u/38124537",
   links: [
     { title: "GitHub", url: "https://github.com/alexlees" },
   ],
   background: "#f9f9f9",
-  lang: 'zh-cn',
+  lang: "zh-cn",
   timezone: "zh-cn",
   middlewares: [
     ga("G-9RKQCCX1SR"),
