@@ -5,7 +5,6 @@ blog({
   author: "alexlees",
   description: "alexlees's blog",
   avatarClass: "rounded-full",
-  avatar: "https://avatars.githubusercontent.com/u/38124537",
   links: [
     { title: "GitHub", url: "https://github.com/alexlees" },
   ],
