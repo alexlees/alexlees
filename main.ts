@@ -1,5 +1,7 @@
 import blog, { ga, redirects } from "https://deno.land/x/blog@0.4.1/blog.tsx";
 
+const gaKey = Deno.env.get('GA_KEY')
+
 blog({
   title: "alexlees",
   author: "alexlees",
@@ -9,11 +11,13 @@ blog({
   links: [
     { title: "GitHub", url: "https://github.com/alexlees" },
   ],
-  background: "#f9f9f9",
   lang: "zh-cn",
-  timezone: "zh-cn",
+  theme: 'auto',
   middlewares: [
-    ga("G-9RKQCCX1SR"),
+    ...(
+      gaKey ? [ga(gaKey)] : []
+    ),
     redirects({}),
   ],
+  favicon: 'https://avatars.githubusercontent.com/u/38124537',
 });
